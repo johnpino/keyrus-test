@@ -3,6 +3,10 @@
 --------------------------------------------------------------*/
 
 .mainContent{
+  text-align: center;
   @include make-container();
   @include make-container-max-widths();
+  &__alert {
+    margin: 1rem 0;
+  }
 }

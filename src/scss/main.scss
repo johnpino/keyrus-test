@@ -1,6 +1,17 @@
 //Framework
 @import "global/variables";
-@import "~bootstrap/scss/bootstrap";
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+
+@import "~bootstrap/scss/vendor/rfs";
+@import "~bootstrap/scss/mixins/grid";
+@import "~bootstrap/scss/mixins/hover";
+@import "~bootstrap/scss/mixins/lists";
+@import "~bootstrap/scss/mixins/breakpoints";
+
+@import "~bootstrap/scss/root";
+@import "~bootstrap/scss/reboot";
+@import "~bootstrap/scss/type";
 
 //Globals
 @import "global/forms";
@@ -11,3 +22,4 @@
 //Components
 @import "components/login";
 @import "components/button";
+@import "components/alert";

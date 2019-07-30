@@ -12,26 +12,25 @@
 <body>
 
 	<main class="mainContent">
-		<div class="alert">
-			<i class="far fa-times"></i> Digite seu email e senha
-		</div>
-		<div class="alert">
-			<i class="far fa-check"></i> Voce foi logado com sucesso
-		</div>
+		<div class="alert mainContent__alert"></div>
 		<div class="login">
 			<div class="login__row">
 				<div class="login__cell">
-					<h1>Entrar na minha conta</h1>
-					<form action="">
+					<!--<h1>Entrar na minha conta</h1>-->
+					<h1>Entrar en mi cuenta</h1>
+					<form action="" id="login-form">
 						<div class="login__email"><input type="text" placeholder="Email"></div>
 						<div class="login__password"><input type="password" placeholder="Senha"></div>
-						<button class="button login__button">Entrar</button>
-						<input type="checkbox"> Mantenha-me conectado
+						<button type="submit" class="button login__button">Entrar</button>
+						<div class="login__remember">
+							<input type="checkbox" id="remember">
+							<label for="remember">Mantenha-me conectado</label>
+						</div>
 					</form>
-					<p>Precisa de uma conta? Inscrever-se</p>
-					<p>Esqueceu sua senha? Clique aqui.</p>
 				</div>
 			</div>
+			<p class="login__signUp"><a href="#">Precisa de uma conta? <span>Inscrever-se</span></a></p>
+			<p class="login__forgetPassword">Esqueceu sua senha? <a href="">Clique aqui.</a></p>
 		</div>
 	</main>
 
