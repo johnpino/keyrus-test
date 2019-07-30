@@ -1,0 +1,8 @@
+/*--------------------------------------------------------------
+# Main Content
+--------------------------------------------------------------*/
+
+.mainContent{
+  @include make-container();
+  @include make-container-max-widths();
+}

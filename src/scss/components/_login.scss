@@ -1,0 +1,67 @@
+/*--------------------------------------------------------------
+# Login
+--------------------------------------------------------------*/
+
+.login {
+  &{
+    border-radius: 10px;
+    border: 1px solid $gray-300;
+    //box-shadow: 0 3px 4px 0px $gray-300;
+    box-shadow:
+            /* The top layer shadow */
+            0 1px 1px rgba(0,0,0,0.15),
+              /* The second layer */
+            0 10px 0 -5px #eee,
+              /* The second layer shadow */
+            0 10px 1px -4px rgba(0,0,0,0.15),
+              /* The third layer */
+            0 20px 0 -10px #eee,
+              /* The third layer shadow */
+            0 20px 1px -9px rgba(0,0,0,0.15);
+    padding: 3% 16%;
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  &__row {
+    @include make-row();
+  }
+  &__cell {
+    @include make-col-ready();
+  }
+  &__email, &__password {
+    &::after {
+      color: $gray-300;
+      font-family: 'Font Awesome 5 Pro';
+      font-weight: 900;
+      line-height: 50px;
+      position: absolute;
+      right: 15px;
+    }
+  }
+  &__email {
+    position: relative;
+    &::after {
+      content: '\f007';
+    }
+  }
+  &__password {
+    position: relative;
+    &::after {
+      content: '\f023';
+    }
+  }
+  &__button {
+    display: block;
+    margin: 1rem auto;
+  }
+  h1 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: $gray-600;
+    margin-bottom: 2rem;
+  }
+  input {
+    margin-bottom: .5rem;
+  }
+}

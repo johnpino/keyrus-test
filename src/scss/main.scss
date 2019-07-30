@@ -1,1 +1,13 @@
+//Framework
+@import "global/variables";
 @import "~bootstrap/scss/bootstrap";
+
+//Globals
+@import "global/forms";
+
+//Layouts
+@import "layouts/mainContent";
+
+//Components
+@import "components/login";
+@import "components/button";
