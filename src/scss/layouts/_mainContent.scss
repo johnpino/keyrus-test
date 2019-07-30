@@ -3,9 +3,18 @@
 --------------------------------------------------------------*/
 
 .mainContent{
+  min-height: 100vh;
   text-align: center;
   @include make-container();
   @include make-container-max-widths();
+  &__row {
+    min-height: 100vh;
+    align-items: center;
+    @include make-row();
+  }
+  &__cell {
+    @include make-col-ready();
+  }
   &__alert {
     margin: 1rem 0;
   }
