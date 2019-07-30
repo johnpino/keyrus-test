@@ -1,0 +1,23 @@
+/*--------------------------------------------------------------
+# Bar
+--------------------------------------------------------------*/
+
+.bar {
+  &__icon {
+    background-color: $gray-600;
+    color: $white;
+    display: inline-block;
+    line-height: 40px;
+    height: 40px;
+    width: 40px;
+  }
+  &__body {
+    color: $gray-600;
+    font-style: italic;
+    box-shadow: 1px 1px 1px 1px $gray-300;
+    display: inline-block;
+    line-height: 40px;
+    height: 40px;
+    width: calc(80% - 50px);
+  }
+}
